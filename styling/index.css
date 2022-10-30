@@ -1,1 +1,63 @@
-/*# sourceMappingURL=index.css.map */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  background-color: black;
+  padding: 1.8rem 3rem;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  align-items: center;
+}
+.header__wrapper {
+  display: flex;
+  align-items: center;
+}
+.header__logo {
+  height: 5rem;
+  margin-right: 3rem;
+}
+.header__button {
+  all: unset;
+  background-color: #ff704a;
+  border-radius: 50px;
+  text-transform: uppercase;
+  color: white;
+  background-image: url("../assets/user.png");
+  font-size: 1.2rem;
+  background-size: 2rem;
+  background-repeat: no-repeat;
+  background-position: 7% 50%;
+  padding: 1.2rem 1rem 1.2rem 3.7rem;
+  text-align: center;
+}
+
+.nav__list {
+  display: flex;
+  list-style: none;
+}
+.nav__link {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  margin: 0 2rem;
+  font-size: 1.2rem;
+}/*# sourceMappingURL=index.css.map */
