@@ -6,8 +6,9 @@
   padding: 1.8rem 3rem;
   justify-content: space-between;
   width: 100%;
-  position: fixed;
+  position: sticky;
   align-items: center;
+  position: sticky;
 
   &__wrapper {
     display: flex;
@@ -47,5 +48,230 @@
     text-transform: uppercase;
     margin: 0 2rem;
     font-size: 1.2rem;
+  }
+}
+
+.hero {
+  width: 100vw;
+  height: 80vh;
+
+  &__block {
+    background-image: url("../assets/is-Star-Wars-Episode-9-the-last-one-995499.jpeg");
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__container {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__image {
+    width: 40rem;
+  }
+
+  &__title {
+    color: white;
+    margin: 2rem 0;
+    font-weight: normal;
+  }
+
+  &__button {
+    all: unset;
+    height: 4rem;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 50px;
+    padding: 0 3rem;
+  }
+}
+
+.covid {
+  height: 40vh;
+  padding: 0rem 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 3rem;
+
+  &__title {
+    margin-bottom: 2rem;
+  }
+
+  &__text {
+    font-size: 1.4rem;
+  }
+}
+
+.carousel {
+  background-color: black;
+  color: white;
+  padding: 3rem 0rem 3rem 10rem;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10rem;
+    margin-bottom: 1rem;
+  }
+
+  &__button {
+    all: unset;
+    background-color: white;
+    border-radius: 50px;
+    color: black;
+    background-image: url("../assets/right-arrow.png");
+    font-size: 1.2rem;
+    background-size: 2rem;
+    background-repeat: no-repeat;
+    background-position: 85% 50%;
+    padding: 1.2rem 3.7rem 1.2rem 1rem;
+    text-align: center;
+    width: 7rem;
+  }
+
+  &__title {
+    font-weight: normal;
+  }
+
+  &__movie {
+    font-size: 1.5rem;
+  }
+}
+
+.trailer {
+  display: flex;
+  height: 85vh;
+
+  &__container {
+    width: 50%;
+    background-image: url("../assets/rey.webp");
+    background-position: 80% 10%;
+  }
+
+  &__text {
+    padding: 0 15rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  &__copy {
+    padding: 2rem 0;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
+
+  &__button {
+    all: unset;
+    background-color: black;
+    border-radius: 50px;
+    color: white;
+    background-image: url("../assets/red-arrow.png");
+    font-size: 1.2rem;
+    background-size: 2rem;
+    background-repeat: no-repeat;
+    background-position: 85% 50%;
+    padding: 1.2rem 3.7rem 1.2rem 1rem;
+    text-align: center;
+    width: 7rem;
+  }
+}
+
+.gallery {
+  padding: 4rem 2rem;
+  display: flex;
+
+  &__image {
+    height: 30rem;
+    width: 25%;
+    object-fit: cover;
+    margin-right: 0.5rem;
+  }
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+
+  &__title {
+    font-weight: normal;
+    margin-bottom: 2rem;
+  }
+}
+
+.form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+
+  &__input {
+    all: unset;
+    width: 50%;
+    border: 1px solid rgb(48, 46, 46);
+    margin-bottom: 1rem;
+    padding: 1rem 1rem 1.2rem 1rem;
+
+    &--text {
+      width: 97%;
+    }
+
+    &--left {
+      margin-right: 1rem;
+    }
+
+    &::placeholder {
+      color: rgb(123, 122, 122);
+      font-size: 1.2rem;
+    }
+
+    &:focus {
+      background-color: #e4fde5;
+    }
+  }
+
+  &__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__button {
+    width: 10rem;
+    all: unset;
+    background-color: black;
+    border-radius: 50px;
+    color: white;
+    background-image: url("../assets/red-arrow.png");
+    font-size: 1.2rem;
+    background-size: 2rem;
+    background-repeat: no-repeat;
+    background-position: 85% 50%;
+    padding: 1.2rem 3.7rem 1.2rem 1rem;
+    text-align: center;
+    width: 7rem;
+    margin-top: 1rem;
   }
 }

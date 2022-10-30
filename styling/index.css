@@ -24,8 +24,9 @@ body {
   padding: 1.8rem 3rem;
   justify-content: space-between;
   width: 100%;
-  position: fixed;
+  position: sticky;
   align-items: center;
+  position: sticky;
 }
 .header__wrapper {
   display: flex;
@@ -60,4 +61,204 @@ body {
   text-transform: uppercase;
   margin: 0 2rem;
   font-size: 1.2rem;
+}
+
+.hero {
+  width: 100vw;
+  height: 80vh;
+}
+.hero__block {
+  background-image: url("../assets/is-Star-Wars-Episode-9-the-last-one-995499.jpeg");
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.hero__container {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero__image {
+  width: 40rem;
+}
+.hero__title {
+  color: white;
+  margin: 2rem 0;
+  font-weight: normal;
+}
+.hero__button {
+  all: unset;
+  height: 4rem;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  border-radius: 50px;
+  padding: 0 3rem;
+}
+
+.covid {
+  height: 40vh;
+  padding: 0rem 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 3rem;
+}
+.covid__title {
+  margin-bottom: 2rem;
+}
+.covid__text {
+  font-size: 1.4rem;
+}
+
+.carousel {
+  background-color: black;
+  color: white;
+  padding: 3rem 0rem 3rem 10rem;
+}
+.carousel__header {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10rem;
+  margin-bottom: 1rem;
+}
+.carousel__button {
+  all: unset;
+  background-color: white;
+  border-radius: 50px;
+  color: black;
+  background-image: url("../assets/right-arrow.png");
+  font-size: 1.2rem;
+  background-size: 2rem;
+  background-repeat: no-repeat;
+  background-position: 85% 50%;
+  padding: 1.2rem 3.7rem 1.2rem 1rem;
+  text-align: center;
+  width: 7rem;
+}
+.carousel__title {
+  font-weight: normal;
+}
+.carousel__movie {
+  font-size: 1.5rem;
+}
+
+.trailer {
+  display: flex;
+  height: 85vh;
+}
+.trailer__container {
+  width: 50%;
+  background-image: url("../assets/rey.webp");
+  background-position: 80% 10%;
+}
+.trailer__text {
+  padding: 0 15rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.trailer__copy {
+  padding: 2rem 0;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+}
+.trailer__button {
+  all: unset;
+  background-color: black;
+  border-radius: 50px;
+  color: white;
+  background-image: url("../assets/red-arrow.png");
+  font-size: 1.2rem;
+  background-size: 2rem;
+  background-repeat: no-repeat;
+  background-position: 85% 50%;
+  padding: 1.2rem 3.7rem 1.2rem 1rem;
+  text-align: center;
+  width: 7rem;
+}
+
+.gallery {
+  padding: 4rem 2rem;
+  display: flex;
+}
+.gallery__image {
+  height: 30rem;
+  width: 25%;
+  object-fit: cover;
+  margin-right: 0.5rem;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+.contact__title {
+  font-weight: normal;
+  margin-bottom: 2rem;
+}
+
+.form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.form__input {
+  all: unset;
+  width: 50%;
+  border: 1px solid rgb(48, 46, 46);
+  margin-bottom: 1rem;
+  padding: 1rem 1rem 1.2rem 1rem;
+}
+.form__input--text {
+  width: 97%;
+}
+.form__input--left {
+  margin-right: 1rem;
+}
+.form__input::placeholder {
+  color: rgb(123, 122, 122);
+  font-size: 1.2rem;
+}
+.form__input:focus {
+  background-color: #e4fde5;
+}
+.form__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.form__container {
+  display: flex;
+  justify-content: center;
+}
+.form__button {
+  width: 10rem;
+  all: unset;
+  background-color: black;
+  border-radius: 50px;
+  color: white;
+  background-image: url("../assets/red-arrow.png");
+  font-size: 1.2rem;
+  background-size: 2rem;
+  background-repeat: no-repeat;
+  background-position: 85% 50%;
+  padding: 1.2rem 3.7rem 1.2rem 1rem;
+  text-align: center;
+  width: 7rem;
+  margin-top: 1rem;
 }/*# sourceMappingURL=index.css.map */
