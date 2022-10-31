@@ -1,14 +1,17 @@
 @use "./partials/resets" as *;
+@use "./partials/mixins" as *;
+@use "./partials/typography" as *;
 
 .header {
   display: flex;
-  background-color: black;
   padding: 1.8rem 3rem;
   justify-content: space-between;
   width: 100%;
   position: sticky;
   align-items: center;
-  position: sticky;
+  position: fixed;
+  z-index: 1;
+  background-color: black;
 
   &__wrapper {
     display: flex;
@@ -128,17 +131,11 @@
   }
 
   &__button {
-    all: unset;
+    @include button;
     background-color: white;
-    border-radius: 50px;
     color: black;
     background-image: url("../assets/right-arrow.png");
-    font-size: 1.2rem;
-    background-size: 2rem;
-    background-repeat: no-repeat;
     background-position: 85% 50%;
-    padding: 1.2rem 3.7rem 1.2rem 1rem;
-    text-align: center;
     width: 7rem;
   }
 
@@ -177,17 +174,11 @@
   }
 
   &__button {
-    all: unset;
+    @include button;
     background-color: black;
-    border-radius: 50px;
     color: white;
     background-image: url("../assets/red-arrow.png");
-    font-size: 1.2rem;
-    background-size: 2rem;
-    background-repeat: no-repeat;
     background-position: 85% 50%;
-    padding: 1.2rem 3.7rem 1.2rem 1rem;
-    text-align: center;
     width: 7rem;
   }
 }
@@ -259,19 +250,47 @@
   }
 
   &__button {
+    @include button;
     width: 10rem;
-    all: unset;
     background-color: black;
-    border-radius: 50px;
     color: white;
     background-image: url("../assets/red-arrow.png");
-    font-size: 1.2rem;
-    background-size: 2rem;
-    background-repeat: no-repeat;
     background-position: 85% 50%;
-    padding: 1.2rem 3.7rem 1.2rem 1rem;
-    text-align: center;
     width: 7rem;
     margin-top: 1rem;
+  }
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 4rem 15rem 4rem 10rem;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-weight: normal;
+  }
+
+  &__link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+
+  &__inner {
+    margin-top: 2rem;
+  }
+
+  &__icon {
+    height: 2.5rem;
+    margin-right: 1rem;
   }
 }

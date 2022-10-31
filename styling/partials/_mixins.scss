@@ -1,0 +1,9 @@
+@mixin button {
+  all: unset;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  background-size: 2rem;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 1.2rem 3.7rem 1.2rem 1rem;
+}
